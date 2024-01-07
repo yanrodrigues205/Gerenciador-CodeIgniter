@@ -22,13 +22,14 @@ class Products extends Migration
                 "constraint" => 200
             ],
             "value" => [
-                "type" => "VARCHAR",
-                "null" => false,
-                "constraint" => 15
-            ],
-            "description" => [
                 "type" => "DOUBLE",
                 "default" => 0.0
+                
+            ],
+            "description" => [
+                "type" => "VARCHAR",
+                "null" => false,
+                "constraint" => 500
             ],
             "created_at" => [
                 "type" => "TIMESTAMP",
