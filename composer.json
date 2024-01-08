@@ -17,7 +17,7 @@
     "require-dev": {
         "fakerphp/faker": "^1.9",
         "mikey179/vfsstream": "^1.6",
-        "phpunit/phpunit": "^9.1"
+        "phpunit/phpunit": "^9.6"
     },
     "autoload": {
         "exclude-from-classmap": [
@@ -26,6 +26,7 @@
     },
     "autoload-dev": {
         "psr-4": {
+            "tests\\": "tests/",
             "Tests\\Support\\": "tests/_support"
         }
     },
