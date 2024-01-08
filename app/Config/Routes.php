@@ -28,3 +28,8 @@ use CodeIgniter\Router\RouteCollection;
     // -> USERS
     $routes->post('/users/add','UsersController::createUser');
 
+
+    // -> PRODUCTS
+    $routes->post('/products/add','ProductsController::createProduct');
+    $routes->delete('/products/delete','ProductsController::dropProduct');
+
