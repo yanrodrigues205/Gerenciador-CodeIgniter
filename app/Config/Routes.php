@@ -24,11 +24,14 @@ use CodeIgniter\Router\RouteCollection;
     $routes->get('/clients/phoneStatesPercent','ClientsController::getAllPhones', ["filter"=> "auth"]);
     $routes->get('/clients/getNewsClients','ClientsController::getNewsClients');
 
+    // -> SALES
+    $routes->post('/sales/add','SalesController::createSale');
+    $routes->delete('/sales/delete','SalesController::dropSale');
+    $routes->post('/sales/addProductForSale','SalesController::addProductForSale');
 
     // -> USERS
     $routes->post('/users/add','UsersController::createUser');
-
-
+    
     // -> PRODUCTS
     $routes->post('/products/add','ProductsController::createProduct');
     $routes->delete('/products/delete','ProductsController::dropProduct');

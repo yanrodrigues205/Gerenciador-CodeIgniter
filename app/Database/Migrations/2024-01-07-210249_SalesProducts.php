@@ -16,7 +16,7 @@ class SalesProducts extends Migration
                 "auto_increment" => true,
                 "constraint" => 11
             ],
-            "product_id" => [
+            "products_id" => [
                 "type" => "INT",
                 "unsigned" => true,
                 "constraint" => 11
@@ -41,7 +41,7 @@ class SalesProducts extends Migration
             ]
         ]);
 
-        $this->forge->addForeignKey("product_id", "products", "id", "CASCADE", "CASCADE");
+        $this->forge->addForeignKey("products_id", "products", "id", "CASCADE", "CASCADE");
         $this->forge->addForeignKey("sales_id", "sales", "id", "CASCADE", "CASCADE");
         $this->forge->addPrimaryKey("id");
         $this->forge->createTable("sales_products");
