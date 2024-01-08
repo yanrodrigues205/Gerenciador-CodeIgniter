@@ -3,9 +3,7 @@
     
     use CodeIgniter\RESTful\ResourceController;
     use App\Models\ProductsModel;
-use CodeIgniter\HTTP\Request;
-use CodeIgniter\HTTP\Response;
-use Exception;
+    use Exception;
     class ProductsController extends ResourceController
     {
         protected $model;

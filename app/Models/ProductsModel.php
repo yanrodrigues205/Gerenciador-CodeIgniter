@@ -7,7 +7,7 @@
     {
         protected $table = "products";
         protected $generate;
-        protected $allowedFields = [""];
+        protected $allowedFields = ["name", "value", "description"];
 
         public function __construct()
         {

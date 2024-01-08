@@ -13,7 +13,7 @@ class ClientsModel extends Model
     {
         parent::__construct();
         $database = \Config\Database::connect();
-        $this->generate = $database->table('clients');
+        $this->generate = $database->table("clients");
     }
 
     /**
