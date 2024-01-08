@@ -26,6 +26,11 @@ class SalesProducts extends Migration
                 "unsigned" => true,
                 "constraint" => 11
             ],
+            "amount" => [
+                "type" => "INT",
+                "unsigned" => true,
+                "constraint" => 11
+            ],
             "created_at" => [
                 "type" => "TIMESTAMP",
                 "default" => new RawSql("CURRENT_TIMESTAMP")
