@@ -17,6 +17,43 @@ class SalesController extends ResourceController
     }
 
 
+    public function index()
+    {
+        return view("sales");
+    }
+
+    public function getAllSales()
+    {
+        try
+        {
+            $result = $this->salesModel->getAllSales();
+            if(empty($result) || !isset($result))
+            {
+                return $this->respond([
+                    "statusCode" => 400,
+                    "error" => true,
+                    "message" => "error when get all sales!",
+                ]);
+            }
+
+            return $this->respond([
+                "statusCode"=> 200,
+                "message" => "get all sales successfully!",
+                "error" => false,
+                "sales" => $result
+            ]); 
+        }
+        catch (Exception $err)
+        {
+            return $this->respond([
+                "statusCode" => 500,
+                "error" => $err,
+                "message" => "internal server error!"
+            ]);
+        }
+    }
+
+
     public function addProductForSale()
     {
         try

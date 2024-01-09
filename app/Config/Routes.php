@@ -25,6 +25,8 @@ use CodeIgniter\Router\RouteCollection;
     $routes->get('/clients/getNewsClients','ClientsController::getNewsClients');
 
     // -> SALES
+    $routes->get('/sales','SalesController::index');
+    $routes->get('/sales/getAllSales','SalesController::getAllSales');
     $routes->post('/sales/add','SalesController::createSale');
     $routes->delete('/sales/delete','SalesController::dropSale');
     $routes->post('/sales/addProductForSale','SalesController::addProductForSale');
