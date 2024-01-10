@@ -74,6 +74,7 @@
                     }
                     else if(obj.statusCode == 400)
                     {
+                        $(".loading").attr("style", "display: none");
                         Swal.fire({
                             title: "Incorreto",
                             text: "Verifique seu email e sua senha para continuar!",
@@ -82,6 +83,7 @@
                     }
                     else if(obj.statusCode == 500)
                     {
+                        $(".loading").attr("style", "display: none");
                         Swal.fire({
                             title: "Erro interno",
                             text: "Este é um aviso de erro nos servidores, o mesmo pode estar sendo ocasionado por conta de problemas com banco de dados.",

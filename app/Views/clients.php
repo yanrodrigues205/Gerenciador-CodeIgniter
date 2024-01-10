@@ -20,7 +20,7 @@
             <div class="container text-center" style="height: 120px; display: grid; align-items: center;">
                 <div class="row">
                     <div class="col">
-                        <h2>Clientes</h2>
+                        <h2>Clientes <i class="fa-solid fa-address-card"></i></h2>
                     </div>
                     <div class="col-6">
                     </div>
