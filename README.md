@@ -26,6 +26,11 @@ https://github.com/yanrodrigues205/AMZMP-CodeIgniter/assets/92941649/0ea52eb1-27
 https://github.com/yanrodrigues205/AMZMP-CodeIgniter/assets/92941649/eed346b4-8217-4cd9-a05c-8fe7d7f0c00f
 </details>
 
+## Modelo Entidade Relacional
+<div align="center">
+  <img src="https://github.com/yanrodrigues205/Gerenciador-CodeIgniter/assets/92941649/eb081614-eeff-4e74-884d-32c79ef806a4" width="500" height="250"/>
+</div>
+
 
 
 
